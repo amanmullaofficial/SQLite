@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,8 +10,8 @@
         android:id="@+id/texttitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="please enter the details below"
-        android:textSize="24dp"
+        android:text="@string/please_enter_the_details_below"
+        android:textSize="24sp"
         android:layout_marginTop="20dp"
         />
 
@@ -20,35 +19,38 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        android:textSize="24dp"
+        android:hint="@string/name"
+        android:textSize="24sp"
         android:layout_below="@id/texttitle"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contact"
-        android:textSize="24dp"
+        android:hint="@string/contact"
+        android:textSize="24sp"
         android:layout_below="@id/name"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/dob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Date of Birth"
-        android:textSize="24dp"
+        android:hint="@string/date_of_birth"
+        android:textSize="24sp"
         android:layout_below="@id/contact"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="Insert new Data"
+        android:textSize="24sp"
+        android:text="@string/insert_new_data"
         android:layout_marginTop="30dp"
         android:layout_below="@id/dob"
         />
@@ -57,8 +59,10 @@
         android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="Update Data"
+
+        android:textSize="24sp"
+
+        android:text="@string/update_data"
         android:layout_below="@id/btnInsert"
         />
 
@@ -66,8 +70,8 @@
         android:id="@+id/btnDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="Delete existing Data"
+        android:textSize="24sp"
+        android:text="@string/delete_existing_data"
         android:layout_below="@id/btnUpdate"
         />
 
@@ -75,8 +79,8 @@
         android:id="@+id/btnView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:text="View existing Data"
+        android:textSize="24sp"
+        android:text="@string/view_existing_data"
         android:layout_below="@id/btnDelete"
         />
 
